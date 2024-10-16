@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A84B49582CC0037100A4E78B /* RockPaperScissorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84B49572CC0037100A4E78B /* RockPaperScissorsView.swift */; };
 		A85162332CBE9F1500728313 /* ExempleDecoupageControlleurApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85162322CBE9F1500728313 /* ExempleDecoupageControlleurApp.swift */; };
 		A85162352CBE9F1500728313 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85162342CBE9F1500728313 /* ContentView.swift */; };
 		A85162372CBE9F1900728313 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A85162362CBE9F1900728313 /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A84B49572CC0037100A4E78B /* RockPaperScissorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockPaperScissorsView.swift; sourceTree = "<group>"; };
 		A851622F2CBE9F1500728313 /* ExempleDecoupageControlleur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExempleDecoupageControlleur.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A85162322CBE9F1500728313 /* ExempleDecoupageControlleurApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExempleDecoupageControlleurApp.swift; sourceTree = "<group>"; };
 		A85162342CBE9F1500728313 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				A85162322CBE9F1500728313 /* ExempleDecoupageControlleurApp.swift */,
 				A85162392CBE9F1900728313 /* Preview Assets.xcassets */,
 				A8C37C012CBFC852008373E6 /* extention+view.swift */,
+				A84B49572CC0037100A4E78B /* RockPaperScissorsView.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A851624A2CBEB9C900728313 /* MainViewModel.swift in Sources */,
+				A84B49582CC0037100A4E78B /* RockPaperScissorsView.swift in Sources */,
 				A85162462CBEB42200728313 /* AppParameters.swift in Sources */,
 				A85162482CBEB5DE00728313 /* DataController.swift in Sources */,
 				A85162352CBE9F1500728313 /* ContentView.swift in Sources */,

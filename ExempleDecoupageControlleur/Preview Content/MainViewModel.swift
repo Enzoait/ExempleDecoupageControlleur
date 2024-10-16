@@ -10,8 +10,8 @@ import SwiftUI
 class MainViewModel : ObservableObject {
     
     @Published var isValid = false
-    var timer: Timer?
     @Published var score : Int = 0
+    var timer: Timer?
     
     func checkConnection(login: String, password: String) {
         if let realPassword = DataController.registredUsers[login]{
@@ -37,5 +37,14 @@ class MainViewModel : ObservableObject {
     
     func delayOnly() {
         _ = Timer.scheduledTimer(withTimeInterval: 1, repeats: false, block: { _ in self.score += 1})
+    }
+    
+    func displayRules(state: Bool) -> Bool{
+        if state == true {
+            return false
+        }
+        else {
+            return true
+        }
     }
 }

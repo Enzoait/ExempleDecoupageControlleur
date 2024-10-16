@@ -25,13 +25,15 @@ struct MainView: View {
                         .resizable()
                         .frame(width: 200, height: 200)
                     
-                    Text("Titre de l'app")
+                    Text("L'Antre Des Jeux")
                         .font(.largeTitle)
                         .fontWeight(.bold)
                     
+                    Text("Fun. Amusants. Drôles.")
+                        .foregroundStyle(.gray)
+                    
                     TextField("Nom d'utilisateur", text: $login)
                         .frame(width: 246, height: 44)
-                        .background(.white)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                     SecureField("Mot de passe", text: $password)
                         .frame(width: 246, height: 44)
@@ -54,8 +56,11 @@ struct MainView: View {
                         }
                     } label : {
                         Text("Check")
-                            .tint(.green)
+                            .tint(.white)
+                            .padding(5)
                     }
+                    .background(.green)
+                    .cornerRadius(7.5)
                 }
             }
             
