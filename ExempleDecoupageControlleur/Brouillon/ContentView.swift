@@ -8,7 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var appui1: Int = 0
+    
+    var view = MainView()
+    
+    var body: some View {
+        MainView()
+    }
+    /*@State var appui1: Int = 0
     var appui2: Int = 0
     var appui3: Int = 0
     
@@ -56,7 +62,7 @@ struct ContentView: View {
     
     func getNote() -> Int {
         Int.random(in: 0...20)
-    }
+    }*/
 }
 
 #Preview {

@@ -24,4 +24,8 @@ class MainViewModel : ObservableObject {
             isValid = false
         }
     }
+    
+    func additionne(_ a: Int, et b: Int) -> Int {
+        return a + b
+    }
 }

@@ -17,7 +17,18 @@ struct MainView: View {
         NavigationStack {
             if !viewModel.isValid {
                 VStack {
-                    Text("Connexion").fontWeight(.bold).padding(.leading, 20)
+                    
+                    Text("Essai")
+                        .padding()
+                        .goldenFrame()
+                    
+                    Image("Box")
+                        .resizable()
+                        .frame(width: 200, height: 200)
+                    
+                    Text("Connexion")
+                        .fontWeight(.bold)
+                        .padding(.leading, 20)
                     TextField("Nom d'utilisateur", text: $login)
                         .frame(width: 246, height: 44)
                         .background(.white)

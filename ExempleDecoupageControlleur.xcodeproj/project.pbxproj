@@ -16,7 +16,20 @@
 		A85162462CBEB42200728313 /* AppParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85162452CBEB42200728313 /* AppParameters.swift */; };
 		A85162482CBEB5DE00728313 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85162472CBEB5DE00728313 /* DataController.swift */; };
 		A851624A2CBEB9C900728313 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85162492CBEB9C900728313 /* MainViewModel.swift */; };
+		A8C37BF82CBF9DF3008373E6 /* ExempleDecoupageControlleurTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C37BF72CBF9DF3008373E6 /* ExempleDecoupageControlleurTests.swift */; };
+		A8C37C002CBFBFEB008373E6 /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C37BFF2CBFBFEB008373E6 /* IconView.swift */; };
+		A8C37C022CBFC852008373E6 /* extention+view.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C37C012CBFC852008373E6 /* extention+view.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A8C37BF92CBF9DF3008373E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A85162272CBE9F1500728313 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A851622E2CBE9F1500728313;
+			remoteInfo = ExempleDecoupageControlleur;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		A851622F2CBE9F1500728313 /* ExempleDecoupageControlleur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExempleDecoupageControlleur.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,10 +42,21 @@
 		A85162452CBEB42200728313 /* AppParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppParameters.swift; sourceTree = "<group>"; };
 		A85162472CBEB5DE00728313 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		A85162492CBEB9C900728313 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		A8C37BF52CBF9DF3008373E6 /* ExempleDecoupageControlleurTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExempleDecoupageControlleurTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8C37BF72CBF9DF3008373E6 /* ExempleDecoupageControlleurTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExempleDecoupageControlleurTests.swift; sourceTree = "<group>"; };
+		A8C37BFF2CBFBFEB008373E6 /* IconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconView.swift; sourceTree = "<group>"; };
+		A8C37C012CBFC852008373E6 /* extention+view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extention+view.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A851622C2CBE9F1500728313 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8C37BF22CBF9DF3008373E6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -46,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				A85162312CBE9F1500728313 /* ExempleDecoupageControlleur */,
+				A8C37BF62CBF9DF3008373E6 /* ExempleDecoupageControlleurTests */,
 				A85162302CBE9F1500728313 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				A851622F2CBE9F1500728313 /* ExempleDecoupageControlleur.app */,
+				A8C37BF52CBF9DF3008373E6 /* ExempleDecoupageControlleurTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,13 +87,8 @@
 		A85162312CBE9F1500728313 /* ExempleDecoupageControlleur */ = {
 			isa = PBXGroup;
 			children = (
+				A8C37BFE2CBFBB93008373E6 /* ElementView */,
 				A85162422CBEAA3F00728313 /* Brouillon */,
-				A85162322CBE9F1500728313 /* ExempleDecoupageControlleurApp.swift */,
-				A85162402CBEA9B800728313 /* MainView.swift */,
-				A85162432CBEAB5900728313 /* MenuAppsView.swift */,
-				A85162492CBEB9C900728313 /* MainViewModel.swift */,
-				A85162472CBEB5DE00728313 /* DataController.swift */,
-				A85162452CBEB42200728313 /* AppParameters.swift */,
 				A85162362CBE9F1900728313 /* Assets.xcassets */,
 				A85162382CBE9F1900728313 /* Preview Content */,
 			);
@@ -77,7 +98,14 @@
 		A85162382CBE9F1900728313 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				A85162492CBEB9C900728313 /* MainViewModel.swift */,
+				A85162472CBEB5DE00728313 /* DataController.swift */,
+				A85162452CBEB42200728313 /* AppParameters.swift */,
+				A85162432CBEAB5900728313 /* MenuAppsView.swift */,
+				A85162402CBEA9B800728313 /* MainView.swift */,
+				A85162322CBE9F1500728313 /* ExempleDecoupageControlleurApp.swift */,
 				A85162392CBE9F1900728313 /* Preview Assets.xcassets */,
+				A8C37C012CBFC852008373E6 /* extention+view.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -88,6 +116,22 @@
 				A85162342CBE9F1500728313 /* ContentView.swift */,
 			);
 			path = Brouillon;
+			sourceTree = "<group>";
+		};
+		A8C37BF62CBF9DF3008373E6 /* ExempleDecoupageControlleurTests */ = {
+			isa = PBXGroup;
+			children = (
+				A8C37BF72CBF9DF3008373E6 /* ExempleDecoupageControlleurTests.swift */,
+			);
+			path = ExempleDecoupageControlleurTests;
+			sourceTree = "<group>";
+		};
+		A8C37BFE2CBFBB93008373E6 /* ElementView */ = {
+			isa = PBXGroup;
+			children = (
+				A8C37BFF2CBFBFEB008373E6 /* IconView.swift */,
+			);
+			path = ElementView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +154,24 @@
 			productReference = A851622F2CBE9F1500728313 /* ExempleDecoupageControlleur.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A8C37BF42CBF9DF3008373E6 /* ExempleDecoupageControlleurTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8C37BFB2CBF9DF3008373E6 /* Build configuration list for PBXNativeTarget "ExempleDecoupageControlleurTests" */;
+			buildPhases = (
+				A8C37BF12CBF9DF3008373E6 /* Sources */,
+				A8C37BF22CBF9DF3008373E6 /* Frameworks */,
+				A8C37BF32CBF9DF3008373E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A8C37BFA2CBF9DF3008373E6 /* PBXTargetDependency */,
+			);
+			name = ExempleDecoupageControlleurTests;
+			productName = ExempleDecoupageControlleurTests;
+			productReference = A8C37BF52CBF9DF3008373E6 /* ExempleDecoupageControlleurTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -122,6 +184,10 @@
 				TargetAttributes = {
 					A851622E2CBE9F1500728313 = {
 						CreatedOnToolsVersion = 15.4;
+					};
+					A8C37BF42CBF9DF3008373E6 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = A851622E2CBE9F1500728313;
 					};
 				};
 			};
@@ -139,6 +205,7 @@
 			projectRoot = "";
 			targets = (
 				A851622E2CBE9F1500728313 /* ExempleDecoupageControlleur */,
+				A8C37BF42CBF9DF3008373E6 /* ExempleDecoupageControlleurTests */,
 			);
 		};
 /* End PBXProject section */
@@ -150,6 +217,13 @@
 			files = (
 				A851623A2CBE9F1900728313 /* Preview Assets.xcassets in Resources */,
 				A85162372CBE9F1900728313 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8C37BF32CBF9DF3008373E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,12 +239,30 @@
 				A85162482CBEB5DE00728313 /* DataController.swift in Sources */,
 				A85162352CBE9F1500728313 /* ContentView.swift in Sources */,
 				A85162442CBEAB5900728313 /* MenuAppsView.swift in Sources */,
+				A8C37C022CBFC852008373E6 /* extention+view.swift in Sources */,
+				A8C37C002CBFBFEB008373E6 /* IconView.swift in Sources */,
 				A85162412CBEA9B800728313 /* MainView.swift in Sources */,
 				A85162332CBE9F1500728313 /* ExempleDecoupageControlleurApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A8C37BF12CBF9DF3008373E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8C37BF82CBF9DF3008373E6 /* ExempleDecoupageControlleurTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A8C37BFA2CBF9DF3008373E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A851622E2CBE9F1500728313 /* ExempleDecoupageControlleur */;
+			targetProxy = A8C37BF92CBF9DF3008373E6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		A851623B2CBE9F1900728313 /* Debug */ = {
@@ -305,8 +397,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,6 +405,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = fr.aityakoubenzo.ExempleDecoupageControlleur;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -333,8 +428,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -342,9 +436,47 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = fr.aityakoubenzo.ExempleDecoupageControlleur;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A8C37BFC2CBF9DF3008373E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.aityakoubenzo.ExempleDecoupageControlleurTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExempleDecoupageControlleur.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ExempleDecoupageControlleur";
+			};
+			name = Debug;
+		};
+		A8C37BFD2CBF9DF3008373E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.aityakoubenzo.ExempleDecoupageControlleurTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExempleDecoupageControlleur.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ExempleDecoupageControlleur";
 			};
 			name = Release;
 		};
@@ -365,6 +497,15 @@
 			buildConfigurations = (
 				A851623E2CBE9F1900728313 /* Debug */,
 				A851623F2CBE9F1900728313 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8C37BFB2CBF9DF3008373E6 /* Build configuration list for PBXNativeTarget "ExempleDecoupageControlleurTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8C37BFC2CBF9DF3008373E6 /* Debug */,
+				A8C37BFD2CBF9DF3008373E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

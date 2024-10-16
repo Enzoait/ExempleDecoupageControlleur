@@ -11,7 +11,7 @@ import SwiftUI
 struct ExempleDecoupageControlleurApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }
