@@ -12,23 +12,23 @@ struct MainView: View {
     @State private var login: String = ""
     @State private var password: String = ""
     @State private var isValid: Bool = false
+    @State private var noUsername : Bool = false
+    @State private var noPassword : Bool = false
+    @State private var invalidCredentials : Bool = false
     
     var body: some View {
         NavigationStack {
             if !viewModel.isValid {
                 VStack {
                     
-                    Text("Essai")
-                        .padding()
-                        .goldenFrame()
-                    
-                    Image("Box")
+                    Image("Logo")
                         .resizable()
                         .frame(width: 200, height: 200)
                     
-                    Text("Connexion")
+                    Text("Titre de l'app")
+                        .font(.largeTitle)
                         .fontWeight(.bold)
-                        .padding(.leading, 20)
+                    
                     TextField("Nom d'utilisateur", text: $login)
                         .frame(width: 246, height: 44)
                         .background(.white)
@@ -36,22 +36,51 @@ struct MainView: View {
                     SecureField("Mot de passe", text: $password)
                         .frame(width: 246, height: 44)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
-                        
                     Button {
+                        guard login != "" else {
+                            noUsername = true
+                            return
+                        }
+                        
+                        guard password != "" else {
+                            noPassword = true
+                            return
+                        }
                         viewModel.checkConnection(login: login, password: password)
+                        
+                        guard viewModel.isValid == true else {
+                            invalidCredentials = true
+                            return
+                        }
                     } label : {
                         Text("Check")
+                            .tint(.green)
                     }
                 }
             }
             
             if viewModel.isValid {
+                Text("Bienvenue, \(login).")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                
                 NavigationLink(destination: MenuAppsView()){
-                    Text("Se connecter")
+                    Text("Accèder aux jeux")
+                        .tint(.green)
                 }
             }
             
-        }.frame(maxWidth: .infinity, maxHeight: .infinity)
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .alert(isPresented: $noUsername) {
+            Alert(title: Text("Connexion Impossible"), message: Text("Vous devez entrer un nom d'utilisateur."))
+        }
+        .alert(isPresented: $noPassword) {
+            Alert(title: Text("Connexion Impossible"), message: Text("Vous devez entrer un mot de passe."))
+        }
+        .alert(isPresented: $invalidCredentials) {
+            Alert(title: Text("Connexion Impossible"), message: Text("Identifiants incorrects."))
+        }
     }
 }
 

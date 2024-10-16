@@ -8,9 +8,37 @@
 import SwiftUI
 
 struct MenuAppsView : View {
+    
+    @StateObject var viewModel = MainViewModel()
+    
     var body: some View {
         VStack {
             ScrollView{
+                Text("Score: \(viewModel.score)")
+                
+                HStack{
+                    Button {
+                        viewModel.launchChrono()
+                    }
+                    label : {
+                        Text("Go")
+                    }
+                    
+                    Button {
+                        viewModel.timer?.invalidate()
+                    }
+                    label : {
+                        Text("Stop")
+                    }
+                    
+                    Button {
+                        viewModel.score = 0
+                    }
+                    label : {
+                        Text("Reset")
+                    }
+                }
+                
                 Text("Menu des applications")
                 
                 ForEach(availableApps.allCases, id: \.self) {
