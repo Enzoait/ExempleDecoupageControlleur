@@ -55,7 +55,7 @@ struct MainView: View {
                             return
                         }
                     } label : {
-                        Text("Check")
+                        Text("Se connecter")
                             .tint(.white)
                             .padding(5)
                     }

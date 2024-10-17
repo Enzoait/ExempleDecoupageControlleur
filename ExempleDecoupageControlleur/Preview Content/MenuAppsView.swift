@@ -14,32 +14,8 @@ struct MenuAppsView : View {
     var body: some View {
         VStack {
             ScrollView{
-                Text("Score: \(viewModel.score)")
                 
-                HStack{
-                    Button {
-                        viewModel.launchChrono()
-                    }
-                    label : {
-                        Text("Go")
-                    }
-                    
-                    Button {
-                        viewModel.timer?.invalidate()
-                    }
-                    label : {
-                        Text("Stop")
-                    }
-                    
-                    Button {
-                        viewModel.score = 0
-                    }
-                    label : {
-                        Text("Reset")
-                    }
-                }
-                
-                Text("Menu des Applications")
+                Text("Menu des Jeux")
                     .font(.title)
                     .fontWeight(.bold)
                 

@@ -10,8 +10,7 @@ import SwiftUI
 class MainViewModel : ObservableObject {
     
     @Published var isValid = false
-    @Published var score : Int = 0
-    var timer: Timer?
+    
     
     func checkConnection(login: String, password: String) {
         if let realPassword = DataController.registredUsers[login]{
@@ -29,14 +28,6 @@ class MainViewModel : ObservableObject {
     
     func additionne(_ a: Int, et b: Int) -> Int {
         return a + b
-    }
-    
-    func launchChrono() {
-        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { _ in self.score += 1})
-    }
-    
-    func delayOnly() {
-        _ = Timer.scheduledTimer(withTimeInterval: 1, repeats: false, block: { _ in self.score += 1})
     }
     
     func displayRules(state: Bool) -> Bool{
