@@ -17,6 +17,9 @@
 		A85162462CBEB42200728313 /* AppParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85162452CBEB42200728313 /* AppParameters.swift */; };
 		A85162482CBEB5DE00728313 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85162472CBEB5DE00728313 /* DataController.swift */; };
 		A851624A2CBEB9C900728313 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85162492CBEB9C900728313 /* MainViewModel.swift */; };
+		A864FBAE2CC113D500E954FA /* RockPaperScissorsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A864FBAD2CC113D500E954FA /* RockPaperScissorsViewModel.swift */; };
+		A864FBB12CC1302C00E954FA /* TicTacToeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A864FBB02CC1302C00E954FA /* TicTacToeView.swift */; };
+		A864FBB32CC1386200E954FA /* TicTacToeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A864FBB22CC1386200E954FA /* TicTacToeViewModel.swift */; };
 		A8C37BF82CBF9DF3008373E6 /* ExempleDecoupageControlleurTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C37BF72CBF9DF3008373E6 /* ExempleDecoupageControlleurTests.swift */; };
 		A8C37C002CBFBFEB008373E6 /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C37BFF2CBFBFEB008373E6 /* IconView.swift */; };
 		A8C37C022CBFC852008373E6 /* extention+view.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C37C012CBFC852008373E6 /* extention+view.swift */; };
@@ -44,6 +47,9 @@
 		A85162452CBEB42200728313 /* AppParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppParameters.swift; sourceTree = "<group>"; };
 		A85162472CBEB5DE00728313 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		A85162492CBEB9C900728313 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		A864FBAD2CC113D500E954FA /* RockPaperScissorsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockPaperScissorsViewModel.swift; sourceTree = "<group>"; };
+		A864FBB02CC1302C00E954FA /* TicTacToeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeView.swift; sourceTree = "<group>"; };
+		A864FBB22CC1386200E954FA /* TicTacToeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeViewModel.swift; sourceTree = "<group>"; };
 		A8C37BF52CBF9DF3008373E6 /* ExempleDecoupageControlleurTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExempleDecoupageControlleurTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8C37BF72CBF9DF3008373E6 /* ExempleDecoupageControlleurTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExempleDecoupageControlleurTests.swift; sourceTree = "<group>"; };
 		A8C37BFF2CBFBFEB008373E6 /* IconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconView.swift; sourceTree = "<group>"; };
@@ -92,6 +98,11 @@
 				A8C37BFE2CBFBB93008373E6 /* ElementView */,
 				A85162422CBEAA3F00728313 /* Brouillon */,
 				A85162362CBE9F1900728313 /* Assets.xcassets */,
+				A85162472CBEB5DE00728313 /* DataController.swift */,
+				A85162452CBEB42200728313 /* AppParameters.swift */,
+				A85162322CBE9F1500728313 /* ExempleDecoupageControlleurApp.swift */,
+				A85162392CBE9F1900728313 /* Preview Assets.xcassets */,
+				A864FBAC2CC113B900E954FA /* ViewModels */,
 				A85162382CBE9F1900728313 /* Preview Content */,
 			);
 			path = ExempleDecoupageControlleur;
@@ -100,15 +111,11 @@
 		A85162382CBE9F1900728313 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				A85162492CBEB9C900728313 /* MainViewModel.swift */,
-				A85162472CBEB5DE00728313 /* DataController.swift */,
-				A85162452CBEB42200728313 /* AppParameters.swift */,
 				A85162432CBEAB5900728313 /* MenuAppsView.swift */,
-				A85162402CBEA9B800728313 /* MainView.swift */,
-				A85162322CBE9F1500728313 /* ExempleDecoupageControlleurApp.swift */,
-				A85162392CBE9F1900728313 /* Preview Assets.xcassets */,
-				A8C37C012CBFC852008373E6 /* extention+view.swift */,
 				A84B49572CC0037100A4E78B /* RockPaperScissorsView.swift */,
+				A864FBB02CC1302C00E954FA /* TicTacToeView.swift */,
+				A85162402CBEA9B800728313 /* MainView.swift */,
+				A8C37C012CBFC852008373E6 /* extention+view.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -119,6 +126,16 @@
 				A85162342CBE9F1500728313 /* ContentView.swift */,
 			);
 			path = Brouillon;
+			sourceTree = "<group>";
+		};
+		A864FBAC2CC113B900E954FA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A85162492CBEB9C900728313 /* MainViewModel.swift */,
+				A864FBAD2CC113D500E954FA /* RockPaperScissorsViewModel.swift */,
+				A864FBB22CC1386200E954FA /* TicTacToeViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		A8C37BF62CBF9DF3008373E6 /* ExempleDecoupageControlleurTests */ = {
@@ -238,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A851624A2CBEB9C900728313 /* MainViewModel.swift in Sources */,
+				A864FBB32CC1386200E954FA /* TicTacToeViewModel.swift in Sources */,
 				A84B49582CC0037100A4E78B /* RockPaperScissorsView.swift in Sources */,
 				A85162462CBEB42200728313 /* AppParameters.swift in Sources */,
 				A85162482CBEB5DE00728313 /* DataController.swift in Sources */,
@@ -246,7 +264,9 @@
 				A8C37C022CBFC852008373E6 /* extention+view.swift in Sources */,
 				A8C37C002CBFBFEB008373E6 /* IconView.swift in Sources */,
 				A85162412CBEA9B800728313 /* MainView.swift in Sources */,
+				A864FBB12CC1302C00E954FA /* TicTacToeView.swift in Sources */,
 				A85162332CBE9F1500728313 /* ExempleDecoupageControlleurApp.swift in Sources */,
+				A864FBAE2CC113D500E954FA /* RockPaperScissorsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
